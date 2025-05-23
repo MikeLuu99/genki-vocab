@@ -13,10 +13,20 @@ const sortedLessons = [...lessonsData.lessons].sort(
         <h1>Japanese Vocabulary Lessons</h1>
         <p>Select a lesson to view its vocabulary:</p>
 
-        <div class="lessons-grid">
+        <div class="card-grid">
             {
                 sortedLessons.map((lesson) => (
                     <a href={`/lesson/${lesson.lesson}`} class="lesson-card">
+                        Lesson {lesson.lesson}
+                    </a>
+                ))
+            }
+        </div>
+        <h1>Lesson Quizzes</h1>
+        <div class="card-grid">
+            {
+                sortedLessons.map((lesson) => (
+                    <a href={`/quiz/${lesson.lesson}`} class="lesson-card">
                         Lesson {lesson.lesson}
                     </a>
                 ))

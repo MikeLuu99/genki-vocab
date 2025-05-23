@@ -1,0 +1,556 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import lessonsData from "../../../data/lessons.json";
+
+// Generate a static path for each lesson
+export async function getStaticPaths() {
+    const lessonIds = lessonsData.lessons.map((lesson) =>
+        lesson.lesson.toString(),
+    );
+
+    return lessonIds.map((id) => ({
+        params: { quiz: id },
+    }));
+}
+
+// Get the lesson data from the params
+const { quiz } = Astro.params;
+const lessonNumber = Number.parseInt(quiz);
+
+// Find the corresponding lesson data from the JSON
+const lessonData = lessonsData.lessons.find((l) => l.lesson === lessonNumber);
+
+// Define an enum for vocabulary types
+enum VocabularyType {
+    Nouns = "nouns",
+    IAdjectives = "i_adjectives",
+    NaAdjectives = "na_adjectives",
+    UVerbs = "u_verbs",
+    RuVerbs = "ru_verbs",
+    IrregularVerbs = "irregular_verbs",
+    AdverbsExpressions = "adverbs_and_expressions",
+    Counters = "counters",
+}
+
+// Define the vocabulary item type
+type VocabularyItem = {
+    english: string;
+    japanese: string;
+    kanji?: string;
+    category: string;
+};
+
+// Function to get all vocabulary items from a lesson
+const getAllVocabulary = (): VocabularyItem[] => {
+    if (!lessonData) return [];
+
+    const allVocab: VocabularyItem[] = [];
+
+    // Add all vocabulary categories with their category labels
+    const categories = [
+        { key: VocabularyType.Nouns, label: "Nouns" },
+        { key: VocabularyType.IAdjectives, label: "い-Adjectives" },
+        { key: VocabularyType.NaAdjectives, label: "な-Adjectives" },
+        { key: VocabularyType.UVerbs, label: "U-Verbs" },
+        { key: VocabularyType.RuVerbs, label: "Ru-Verbs" },
+        { key: VocabularyType.IrregularVerbs, label: "Irregular Verbs" },
+        {
+            key: VocabularyType.AdverbsExpressions,
+            label: "Adverbs & Expressions",
+        },
+        { key: VocabularyType.Counters, label: "Counters" },
+    ];
+
+    for (const { key, label } of categories) {
+        if (lessonData[key]) {
+            for (const item of lessonData[key] as VocabularyItem[]) {
+                allVocab.push({
+                    ...item,
+                    category: label,
+                });
+            }
+        }
+    }
+
+    return allVocab;
+};
+
+const allVocabulary = getAllVocabulary();
+---
+
+<Layout title={`Japanese Quiz - Lesson ${lessonNumber}`}>
+    <main class="min-h-screen bg-white py-8 px-4">
+        <div class="max-w-4xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-black mb-2">
+                    Lesson {lessonNumber} Quiz
+                </h1>
+                <p class="text-black">
+                    Test your knowledge of Japanese vocabulary
+                </p>
+            </div>
+
+            <!-- Quiz Container -->
+            <div id="quiz-container" class="bg-white border-2 border-black p-8">
+                <!-- Quiz Mode Selection -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-bold text-black mb-4">
+                        Quiz Mode:
+                    </h3>
+                    <div class="flex flex-wrap gap-4">
+                        <label class="flex items-center cursor-pointer">
+                            <input
+                                type="radio"
+                                name="quiz-mode"
+                                value="ja-to-en"
+                                checked
+                                class="mr-2"
+                            />
+                            <span class="text-black">Japanese → English</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input
+                                type="radio"
+                                name="quiz-mode"
+                                value="en-to-ja"
+                                class="mr-2"
+                            />
+                            <span class="text-black">English → Japanese</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Quiz Stats -->
+                <div
+                    class="flex justify-between items-center mb-6 p-4 border border-black"
+                >
+                    <div class="text-sm text-black">
+                        Question <span id="current-question">1</span> of <span
+                            id="total-questions">{allVocabulary.length}</span
+                        >
+                    </div>
+                    <div class="text-sm text-black">
+                        Score: <span id="score">0</span>/<span
+                            id="total-answered">0</span
+                        >
+                    </div>
+                </div>
+
+                <!-- Question Card -->
+                <div id="question-card" class="mb-8">
+                    <div class="text-center mb-6">
+                        <div
+                            id="question-category"
+                            class="text-sm text-black font-bold mb-2"
+                        >
+                        </div>
+                        <div
+                            id="question-text"
+                            class="text-3xl font-bold text-black mb-2"
+                        >
+                        </div>
+                        <div id="question-kanji" class="text-xl text-black">
+                        </div>
+                    </div>
+
+                    <!-- Answer Choices -->
+                    <div
+                        id="answer-choices"
+                        class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"
+                    >
+                        <!-- Choices will be dynamically generated -->
+                    </div>
+
+                    <!-- Result Message -->
+                    <div id="result-message" class="text-center mb-6 hidden">
+                        <div id="result-text" class="text-lg font-bold mb-2">
+                        </div>
+                        <div id="correct-answer" class="text-black"></div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="text-center">
+                        <button
+                            id="next-button"
+                            class="bg-white border-2 border-black text-black font-bold py-3 px-6 hover:bg-black hover:text-white transition-colors disabled:bg-gray-200 disabled:border-gray-400 disabled:text-gray-400 disabled:cursor-not-allowed"
+                            disabled
+                        >
+                            Next Question
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quiz Complete Screen -->
+                <div id="quiz-complete" class="text-center hidden">
+                    <div class="mb-6">
+                        <h2 class="text-3xl font-bold text-black mb-4">
+                            Quiz Complete!
+                        </h2>
+                        <div class="text-xl text-black mb-4">
+                            Final Score: <span
+                                id="final-score"
+                                class="font-bold"></span>
+                        </div>
+                        <div
+                            id="performance-message"
+                            class="text-lg text-black mb-6"
+                        >
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <button
+                            id="restart-button"
+                            class="bg-white border-2 border-black text-black font-bold py-3 px-6 hover:bg-black hover:text-white transition-colors"
+                        >
+                            Take Quiz Again
+                        </button>
+                        <a
+                            href={`/lesson/${lessonNumber}`}
+                            class="bg-white border-2 border-black text-black font-bold py-3 px-6 hover:bg-black hover:text-white transition-colors inline-block"
+                        >
+                            Study Vocabulary
+                        </a>
+                        {
+                            lessonNumber < 23 && (
+                                <a
+                                    href={`/quiz/${lessonNumber + 1}`}
+                                    class="bg-white border-2 border-black text-black font-bold py-3 px-6 hover:bg-black hover:text-white transition-colors inline-block"
+                                >
+                                    Next Lesson Quiz
+                                </a>
+                            )
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-between items-center mt-8">
+                {
+                    lessonNumber > 13 && (
+                        <a
+                            href={`/quiz/${lessonNumber - 1}`}
+                            class="bg-white border-2 border-black text-black font-bold py-2 px-4 hover:bg-black hover:text-white transition-colors"
+                        >
+                            ← Previous Quiz
+                        </a>
+                    )
+                }
+                <a
+                    href={`/lesson/${lessonNumber}`}
+                    class="bg-white border-2 border-black text-black font-bold py-2 px-4 hover:bg-black hover:text-white transition-colors"
+                >
+                    Study Vocabulary
+                </a>
+                {
+                    lessonNumber < 23 && (
+                        <a
+                            href={`/quiz/${lessonNumber + 1}`}
+                            class="bg-white border-2 border-black text-black font-bold py-2 px-4 hover:bg-black hover:text-white transition-colors"
+                        >
+                            Next Quiz →
+                        </a>
+                    )
+                }
+            </div>
+        </div>
+    </main>
+
+    <script define:vars={{ allVocabulary, lessonNumber }}>
+        class VocabularyQuiz {
+            constructor(vocabulary) {
+                this.vocabulary = vocabulary;
+                this.currentQuestionIndex = 0;
+                this.score = 0;
+                this.totalAnswered = 0;
+                this.quizMode = "ja-to-en";
+                this.shuffledVocabulary = [];
+                this.currentQuestion = null;
+                this.selectedAnswer = null;
+
+                this.init();
+            }
+
+            init() {
+                this.shuffleVocabulary();
+                this.bindEvents();
+                this.loadQuestion();
+                this.updateStats();
+            }
+
+            shuffleVocabulary() {
+                this.shuffledVocabulary = [...this.vocabulary].sort(
+                    () => Math.random() - 0.5,
+                );
+                document.getElementById("total-questions").textContent =
+                    this.shuffledVocabulary.length;
+            }
+
+            bindEvents() {
+                // Quiz mode change
+                document
+                    .querySelectorAll('input[name="quiz-mode"]')
+                    .forEach((radio) => {
+                        radio.addEventListener("change", (e) => {
+                            this.quizMode = e.target.value;
+                            this.resetQuiz();
+                        });
+                    });
+
+                // Next button
+                document
+                    .getElementById("next-button")
+                    .addEventListener("click", () => {
+                        this.nextQuestion();
+                    });
+
+                // Restart button
+                document
+                    .getElementById("restart-button")
+                    .addEventListener("click", () => {
+                        this.resetQuiz();
+                    });
+            }
+
+            resetQuiz() {
+                this.currentQuestionIndex = 0;
+                this.score = 0;
+                this.totalAnswered = 0;
+                this.selectedAnswer = null;
+                this.shuffleVocabulary();
+
+                document
+                    .getElementById("quiz-complete")
+                    .classList.add("hidden");
+                document
+                    .getElementById("question-card")
+                    .classList.remove("hidden");
+
+                this.loadQuestion();
+                this.updateStats();
+            }
+
+            loadQuestion() {
+                if (
+                    this.currentQuestionIndex >= this.shuffledVocabulary.length
+                ) {
+                    this.showResults();
+                    return;
+                }
+
+                this.currentQuestion =
+                    this.shuffledVocabulary[this.currentQuestionIndex];
+                this.selectedAnswer = null;
+
+                // Hide result message
+                document
+                    .getElementById("result-message")
+                    .classList.add("hidden");
+                document.getElementById("next-button").disabled = true;
+                document.getElementById("next-button").textContent =
+                    "Next Question";
+
+                // Update question display
+                this.displayQuestion();
+                this.generateChoices();
+                this.updateStats();
+            }
+
+            displayQuestion() {
+                const categoryEl = document.getElementById("question-category");
+                const questionEl = document.getElementById("question-text");
+                const kanjiEl = document.getElementById("question-kanji");
+
+                categoryEl.textContent = this.currentQuestion.category;
+
+                if (this.quizMode === "ja-to-en") {
+                    questionEl.textContent = this.currentQuestion.japanese;
+                    kanjiEl.textContent = this.currentQuestion.kanji || "";
+                } else {
+                    questionEl.textContent = this.currentQuestion.english;
+                    kanjiEl.textContent = "";
+                }
+            }
+
+            generateChoices() {
+                const choicesContainer =
+                    document.getElementById("answer-choices");
+                choicesContainer.innerHTML = "";
+
+                // Get correct answer
+                const correctAnswer =
+                    this.quizMode === "ja-to-en"
+                        ? this.currentQuestion.english
+                        : this.currentQuestion.japanese;
+
+                // Get wrong answers
+                const wrongAnswers = this.getWrongAnswers(correctAnswer);
+
+                // Combine and shuffle
+                const allChoices = [correctAnswer, ...wrongAnswers].sort(
+                    () => Math.random() - 0.5,
+                );
+
+                // Create choice buttons
+                allChoices.forEach((choice, index) => {
+                    const button = document.createElement("button");
+                    button.className =
+                        "choice-button p-4 text-left border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors focus:outline-none";
+                    button.textContent = choice;
+                    button.addEventListener("click", () =>
+                        this.selectAnswer(choice, button),
+                    );
+                    choicesContainer.appendChild(button);
+                });
+            }
+
+            getWrongAnswers(correctAnswer) {
+                const wrongAnswers = [];
+                const field =
+                    this.quizMode === "ja-to-en" ? "english" : "japanese";
+
+                // Get all possible answers except the correct one
+                const allAnswers = this.vocabulary
+                    .map((item) => item[field])
+                    .filter((answer) => answer !== correctAnswer);
+
+                // Randomly select 3 wrong answers
+                while (wrongAnswers.length < 3 && allAnswers.length > 0) {
+                    const randomIndex = Math.floor(
+                        Math.random() * allAnswers.length,
+                    );
+                    const wrongAnswer = allAnswers.splice(randomIndex, 1)[0];
+                    if (!wrongAnswers.includes(wrongAnswer)) {
+                        wrongAnswers.push(wrongAnswer);
+                    }
+                }
+
+                return wrongAnswers;
+            }
+
+            selectAnswer(selectedChoice, buttonElement) {
+                if (this.selectedAnswer !== null) return;
+
+                this.selectedAnswer = selectedChoice;
+                this.totalAnswered++;
+
+                const correctAnswer =
+                    this.quizMode === "ja-to-en"
+                        ? this.currentQuestion.english
+                        : this.currentQuestion.japanese;
+
+                const isCorrect = selectedChoice === correctAnswer;
+
+                if (isCorrect) {
+                    this.score++;
+                    buttonElement.style.backgroundColor = "#90EE90";
+                    buttonElement.style.borderColor = "#90EE90";
+                } else {
+                    buttonElement.style.backgroundColor = "#FFB6C1";
+                    buttonElement.style.borderColor = "#FFB6C1";
+
+                    // Highlight correct answer
+                    document
+                        .querySelectorAll(".choice-button")
+                        .forEach((btn) => {
+                            if (btn.textContent === correctAnswer) {
+                                btn.style.backgroundColor = "#90EE90";
+                                btn.style.borderColor = "#90EE90";
+                            }
+                        });
+                }
+
+                // Disable all buttons
+                document.querySelectorAll(".choice-button").forEach((btn) => {
+                    btn.disabled = true;
+                    btn.style.cursor = "not-allowed";
+                });
+
+                // Show result
+                this.showResult(isCorrect, correctAnswer);
+
+                // Enable next button
+                document.getElementById("next-button").disabled = false;
+
+                this.updateStats();
+            }
+
+            showResult(isCorrect, correctAnswer) {
+                const resultMessage = document.getElementById("result-message");
+                const resultText = document.getElementById("result-text");
+                const correctAnswerEl =
+                    document.getElementById("correct-answer");
+
+                if (isCorrect) {
+                    resultText.textContent = "Correct!";
+                    resultText.className = "text-lg font-bold mb-2 text-black";
+                } else {
+                    resultText.textContent = "Incorrect";
+                    resultText.className = "text-lg font-bold mb-2 text-black";
+
+                    if (this.quizMode === "ja-to-en") {
+                        correctAnswerEl.textContent = `Correct answer: ${correctAnswer}`;
+                    } else {
+                        const kanji = this.currentQuestion.kanji
+                            ? ` (${this.currentQuestion.kanji})`
+                            : "";
+                        correctAnswerEl.textContent = `Correct answer: ${correctAnswer}${kanji}`;
+                    }
+                }
+
+                resultMessage.classList.remove("hidden");
+            }
+
+            nextQuestion() {
+                this.currentQuestionIndex++;
+                this.loadQuestion();
+            }
+
+            updateStats() {
+                document.getElementById("current-question").textContent =
+                    this.currentQuestionIndex + 1;
+                document.getElementById("score").textContent = this.score;
+                document.getElementById("total-answered").textContent =
+                    this.totalAnswered;
+            }
+
+            showResults() {
+                document
+                    .getElementById("question-card")
+                    .classList.add("hidden");
+                document
+                    .getElementById("quiz-complete")
+                    .classList.remove("hidden");
+
+                const percentage = Math.round(
+                    (this.score / this.totalAnswered) * 100,
+                );
+                document.getElementById("final-score").textContent =
+                    `${this.score}/${this.totalAnswered} (${percentage}%)`;
+
+                let message = "";
+                if (percentage >= 90) {
+                    message = "Excellent! You have mastered this vocabulary!";
+                } else if (percentage >= 80) {
+                    message = "Great job! You know this vocabulary well!";
+                } else if (percentage >= 70) {
+                    message = "Good work! Keep practicing to improve!";
+                } else if (percentage >= 60) {
+                    message = "Not bad! Review the vocabulary and try again!";
+                } else {
+                    message = "Keep studying! Practice makes perfect!";
+                }
+
+                document.getElementById("performance-message").textContent =
+                    message;
+            }
+        }
+
+        // Initialize the quiz when the page loads
+        if (allVocabulary && allVocabulary.length > 0) {
+            new VocabularyQuiz(allVocabulary);
+        }
+    </script>
+</Layout>
