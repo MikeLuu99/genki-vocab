@@ -1,0 +1,2100 @@
+{
+  "lessons": [
+    {
+      "lesson": 13,
+      "nouns": [
+        { "japanese": "おとな", "kanji": "大人", "english": "adult" },
+        { "japanese": "べんごし", "kanji": "弁護士", "english": "lawyer" },
+        { "japanese": "わたくし", "kanji": "私", "english": "I (formal)" },
+        { "japanese": "カレー", "kanji": "", "english": "curry" },
+        { "japanese": "こうちゃ", "kanji": "紅茶", "english": "black tea" },
+        {
+          "japanese": "きもの",
+          "kanji": "着物",
+          "english": "kimono; Japanese traditional dress"
+        },
+        { "japanese": "セーター", "kanji": "", "english": "sweater" },
+        {
+          "japanese": "がっき",
+          "kanji": "楽器",
+          "english": "musical instrument"
+        },
+        { "japanese": "からて", "kanji": "空手", "english": "karate" },
+        { "japanese": "ゴルフ", "kanji": "", "english": "golf" },
+        { "japanese": "バイク", "kanji": "", "english": "motorcycle" },
+        { "japanese": "ぞう", "kanji": "象", "english": "elephant" },
+        { "japanese": "からだ", "kanji": "体", "english": "body" },
+        {
+          "japanese": "がいこくご",
+          "kanji": "外国語",
+          "english": "foreign language"
+        },
+        { "japanese": "ことば", "kanji": "言葉", "english": "language" },
+        { "japanese": "ぶんぽう", "kanji": "文法", "english": "grammar" },
+        { "japanese": "アプリ", "kanji": "", "english": "application" },
+        {
+          "japanese": "アパート",
+          "kanji": "",
+          "english": "apartment; smaller apartment building"
+        },
+        {
+          "japanese": "マンション",
+          "kanji": "",
+          "english": "larger apartment building; condominium"
+        },
+        { "japanese": "くうこう", "kanji": "空港", "english": "airport" },
+        { "japanese": "みせ", "kanji": "店", "english": "shop; store" },
+        { "japanese": "ぶっか", "kanji": "物価", "english": "consumer prices" },
+        { "japanese": "こうこく", "kanji": "広告", "english": "advertisement" },
+        { "japanese": "ぼしゅう", "kanji": "募集", "english": "recruitment" },
+        {
+          "japanese": "やくそく",
+          "kanji": "約束",
+          "english": "promise; appointment"
+        }
+      ],
+      "i_adjectives": [
+        { "japanese": "うれしい", "kanji": "", "english": "glad" },
+        { "japanese": "かなしい", "kanji": "悲しい", "english": "sad" },
+        { "japanese": "きびしい", "kanji": "厳しい", "english": "strict" },
+        {
+          "japanese": "きぶんがわるい",
+          "kanji": "気分が悪い",
+          "english": "to feel sick"
+        },
+        {
+          "japanese": "からい",
+          "kanji": "辛い",
+          "english": "hot and spicy; salty"
+        },
+        { "japanese": "すごい", "kanji": "", "english": "incredible; awesome" },
+        { "japanese": "ちかい", "kanji": "近い", "english": "close; near" }
+      ],
+      "na_adjectives": [
+        {
+          "japanese": "いろいろ（な）",
+          "kanji": "",
+          "english": "various; different kinds of"
+        },
+        {
+          "japanese": "しあわせ（な）",
+          "kanji": "幸せ",
+          "english": "happy (lasting happiness)"
+        },
+        { "japanese": "だめ（な）", "kanji": "", "english": "no good" }
+      ],
+      "u_verbs": [
+        { "japanese": "あむ", "kanji": "編む", "english": "to knit(～を)" },
+        {
+          "japanese": "がんばる",
+          "kanji": "頑張る",
+          "english": "to do one's best; to try hard"
+        },
+        { "japanese": "なく", "kanji": "泣く", "english": "to cry" },
+        {
+          "japanese": "みがく",
+          "kanji": "磨く",
+          "english": "to brush (teeth); to polish(～を)"
+        },
+        {
+          "japanese": "やくそくをまもる",
+          "kanji": "約束を守る",
+          "english": "to keep a promise"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "かんどうする",
+          "kanji": "感動する",
+          "english": "to be moved/touched (by...)(～に)"
+        }
+      ],
+      "adverbs_and_expressions": [
+        { "japanese": "～かい", "kanji": "～回", "english": "... times" },
+        {
+          "japanese": "～キロ",
+          "kanji": "",
+          "english": "... kilometers;... kilograms"
+        },
+        { "japanese": "ぜんぶ", "kanji": "全部", "english": "all" },
+        {
+          "japanese": "～ともうします",
+          "kanji": "～と申します",
+          "english": "my name is..."
+        },
+        { "japanese": "とくに", "kanji": "特に", "english": "especially" }
+      ],
+      "counters": [
+        { "japanese": "いちにち", "kanji": "一日", "english": "one day" },
+        { "japanese": "ふつか", "kanji": "二日", "english": "two days" },
+        { "japanese": "みっか", "kanji": "三日", "english": "three days" },
+        { "japanese": "よっか", "kanji": "四日", "english": "four days" },
+        { "japanese": "いつか", "kanji": "五日", "english": "five days" },
+        { "japanese": "むいか", "kanji": "六日", "english": "six days" },
+        { "japanese": "なのか", "kanji": "七日", "english": "seven days" },
+        { "japanese": "ようか", "kanji": "八日", "english": "eight days" },
+        { "japanese": "ここのか", "kanji": "九日", "english": "nine days" },
+        { "japanese": "とおか", "kanji": "十日", "english": "ten days" }
+      ]
+    },
+    {
+      "lesson": 14,
+      "nouns": [
+        {
+          "japanese": "おくさん",
+          "kanji": "奥さん",
+          "english": "(your/someone's) wife"
+        },
+        {
+          "japanese": "ごしゅじん",
+          "kanji": "ご主人",
+          "english": "(your/someone's) husband"
+        },
+        { "japanese": "パートナー", "kanji": "", "english": "partner" },
+        {
+          "japanese": "おじさん",
+          "kanji": "",
+          "english": "uncle; middle-aged man"
+        },
+        {
+          "japanese": "おばさん",
+          "kanji": "",
+          "english": "aunt; middle-aged woman"
+        },
+        { "japanese": "りょうしん", "kanji": "両親", "english": "parents" },
+        {
+          "japanese": "おおやさん",
+          "kanji": "大家さん",
+          "english": "landlord; landlady"
+        },
+        {
+          "japanese": "みなさん",
+          "kanji": "皆さん",
+          "english": "everyone; all of you"
+        },
+        { "japanese": "チョコレート", "kanji": "", "english": "chocolate" },
+        { "japanese": "みかん", "kanji": "", "english": "mandarin orange" },
+        { "japanese": "トレーナー", "kanji": "", "english": "sweatshirt" },
+        { "japanese": "シャツ", "kanji": "", "english": "shirt" },
+        { "japanese": "ネクタイ", "kanji": "", "english": "necktie" },
+        { "japanese": "マフラー", "kanji": "", "english": "winter scarf" },
+        { "japanese": "ゆびわ", "kanji": "指輪", "english": "ring" },
+        { "japanese": "えんぴつ", "kanji": "鉛筆", "english": "pencil" },
+        {
+          "japanese": "ぬいぐるみ",
+          "kanji": "",
+          "english": "stuffed animal (e.g., teddy bear)"
+        },
+        { "japanese": "まんが", "kanji": "漫画", "english": "comic book" },
+        {
+          "japanese": "けしょうひん",
+          "kanji": "化粧品",
+          "english": "cosmetics"
+        },
+        { "japanese": "ラジオ", "kanji": "", "english": "radio" },
+        { "japanese": "おさら", "kanji": "お皿", "english": "plate; dish" },
+        {
+          "japanese": "おかえし",
+          "kanji": "お返し",
+          "english": "return (as a token of gratitude)"
+        },
+        { "japanese": "りれきしょ", "kanji": "履歴書", "english": "resume" },
+        { "japanese": "クリスマス", "kanji": "", "english": "Christmas" },
+        {
+          "japanese": "バレンタインデー",
+          "kanji": "",
+          "english": "Valentine's Day"
+        },
+        {
+          "japanese": "ホワイトデー",
+          "kanji": "",
+          "english": "\"White Day\" (yet another gift-giving day)"
+        }
+      ],
+      "i_adjectives": [
+        {
+          "japanese": "ほしい",
+          "kanji": "欲しい",
+          "english": "to want (thingが)"
+        }
+      ],
+      "na_adjectives": [
+        {
+          "japanese": "おしゃれ（な）",
+          "kanji": "",
+          "english": "fashionable; stylish"
+        },
+        { "japanese": "けち（な）", "kanji": "", "english": "stingy; cheap" }
+      ],
+      "u_verbs": [
+        {
+          "japanese": "おくる",
+          "kanji": "送る",
+          "english": "to send (personにthingを)"
+        },
+        {
+          "japanese": "にあう",
+          "kanji": "似合う",
+          "english": "to look good (on somebody) (thingが)"
+        }
+      ],
+      "ru_verbs": [
+        {
+          "japanese": "あきらめる",
+          "kanji": "",
+          "english": "to give up(～を)"
+        },
+        {
+          "japanese": "あげる",
+          "kanji": "",
+          "english": "to give (to others) (personにthingを)"
+        },
+        {
+          "japanese": "くれる",
+          "kanji": "",
+          "english": "to give (me) (personにthingを)"
+        },
+        {
+          "japanese": "できる",
+          "kanji": "",
+          "english": "to come into existence; to be made (～が)"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "そうだんする",
+          "kanji": "相談する",
+          "english": "to consult (personに)"
+        },
+        {
+          "japanese": "ちゅういする",
+          "kanji": "注意する",
+          "english": "to give warning (personに); to watch out(～に)"
+        },
+        {
+          "japanese": "プロポーズする",
+          "kanji": "",
+          "english": "to propose marriage (personに)"
+        }
+      ],
+      "adverbs_and_expressions": [
+        {
+          "japanese": "～くん",
+          "kanji": "～君",
+          "english": "Mr./Ms.... (casual)"
+        },
+        {
+          "japanese": "～たち",
+          "kanji": "",
+          "english": "[makes a noun plural]"
+        },
+        { "japanese": "わたしたち", "kanji": "私たち", "english": "we" },
+        {
+          "japanese": "こんな～",
+          "kanji": "",
+          "english": "... like this; this kind of..."
+        },
+        { "japanese": "きゅうに", "kanji": "急に", "english": "suddenly" },
+        { "japanese": "ちょうど", "kanji": "", "english": "exactly" },
+        { "japanese": "よく", "kanji": "", "english": "well" },
+        { "japanese": "さあ", "kanji": "", "english": "I am not sure..." },
+        {
+          "japanese": "どうしたらいい",
+          "kanji": "",
+          "english": "what should one do"
+        }
+      ],
+      "counters": [
+        {
+          "japanese": "～こ",
+          "kanji": "～個",
+          "english": "[generic counter for smaller items]"
+        },
+        {
+          "japanese": "～さつ",
+          "kanji": "～冊",
+          "english": "[counter for bound volumes]"
+        },
+        {
+          "japanese": "～だい",
+          "kanji": "～台",
+          "english": "[counter for equipment]"
+        },
+        {
+          "japanese": "～ひき",
+          "kanji": "～匹",
+          "english": "[counter for smaller animals]"
+        },
+        {
+          "japanese": "～ほん",
+          "kanji": "～本",
+          "english": "[counter for long objects]"
+        }
+      ]
+    },
+    {
+      "lesson": 15,
+      "nouns": [
+        {
+          "japanese": "がいこくじん",
+          "kanji": "外国人",
+          "english": "foreigner"
+        },
+        {
+          "japanese": "そば",
+          "kanji": "",
+          "english": "soba; Japanese buckwheat noodles"
+        },
+        {
+          "japanese": "え",
+          "kanji": "絵",
+          "english": "painting; picture; drawing"
+        },
+        { "japanese": "ちず", "kanji": "地図", "english": "map" },
+        { "japanese": "じしょ", "kanji": "辞書", "english": "dictionary" },
+        { "japanese": "かぐ", "kanji": "家具", "english": "furniture" },
+        { "japanese": "でんち", "kanji": "電池", "english": "battery" },
+        { "japanese": "ジャケット", "kanji": "", "english": "jacket" },
+        { "japanese": "ペット", "kanji": "", "english": "pet" },
+        {
+          "japanese": "わりびきけん",
+          "kanji": "割引券",
+          "english": "discount coupon"
+        },
+        {
+          "japanese": "インターネット",
+          "kanji": "",
+          "english": "internet (more colloquially,ネット)"
+        },
+        { "japanese": "じしん", "kanji": "地震", "english": "earthquake" },
+        { "japanese": "ほけん", "kanji": "保険", "english": "insurance" },
+        { "japanese": "ぜいきん", "kanji": "税金", "english": "tax" },
+        { "japanese": "きょうしつ", "kanji": "教室", "english": "classroom" },
+        { "japanese": "たてもの", "kanji": "建物", "english": "building" },
+        { "japanese": "プール", "kanji": "", "english": "swimming pool" },
+        {
+          "japanese": "えいがかん",
+          "kanji": "映画館",
+          "english": "movie theater"
+        },
+        { "japanese": "りょかん", "kanji": "旅館", "english": "Japanese inn" },
+        { "japanese": "にわ", "kanji": "庭", "english": "garden" },
+        { "japanese": "ボランティア", "kanji": "", "english": "volunteer" },
+        { "japanese": "かつどう", "kanji": "活動", "english": "activity" },
+        { "japanese": "けいけん", "kanji": "経験", "english": "experience" },
+        { "japanese": "しゅうかん", "kanji": "習慣", "english": "custom" },
+        { "japanese": "しめきり", "kanji": "締め切り", "english": "deadline" },
+        { "japanese": "よてい", "kanji": "予定", "english": "schedule; plan" },
+        {
+          "japanese": "そつぎょうしき",
+          "kanji": "卒業式",
+          "english": "graduation ceremony"
+        },
+        { "japanese": "けっこんしき", "kanji": "結婚式", "english": "wedding" }
+      ],
+      "u_verbs": [
+        { "japanese": "うる", "kanji": "売る", "english": "to sell(～を)" },
+        {
+          "japanese": "おろす",
+          "kanji": "下ろす",
+          "english": "to withdraw (money)(～を)"
+        },
+        {
+          "japanese": "かく",
+          "kanji": "描く",
+          "english": "to draw; to paint(～を)"
+        },
+        {
+          "japanese": "さがす",
+          "kanji": "探す",
+          "english": "to look for(～を)"
+        },
+        { "japanese": "さそう", "kanji": "誘う", "english": "to invite(～を)" },
+        { "japanese": "しゃべる", "kanji": "", "english": "to chat" },
+        {
+          "japanese": "つきあう",
+          "kanji": "付き合う",
+          "english": "(1) to date (someone) (personと) (2) to keep company (purposeに)"
+        },
+        {
+          "japanese": "つく",
+          "kanji": "着く",
+          "english": "to arrive (placeに)"
+        },
+        {
+          "japanese": "ほけんにはいる",
+          "kanji": "保険に入る",
+          "english": "to buy insurance"
+        }
+      ],
+      "ru_verbs": [
+        {
+          "japanese": "きをつける",
+          "kanji": "気をつける",
+          "english": "to be cautious/careful(～に)"
+        },
+        {
+          "japanese": "しらべる",
+          "kanji": "調べる",
+          "english": "to look into (a matter) (matterを)"
+        },
+        {
+          "japanese": "みえる",
+          "kanji": "見える",
+          "english": "to be visible(～が)"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "する",
+          "kanji": "",
+          "english": "to decide on (an item) (itemに)"
+        },
+        {
+          "japanese": "かんこうする",
+          "kanji": "観光する",
+          "english": "to do sightseeing"
+        },
+        {
+          "japanese": "よやくする",
+          "kanji": "予約する",
+          "english": "to reserve(～を)"
+        },
+        {
+          "japanese": "さんかする",
+          "kanji": "参加する",
+          "english": "to participate(～に)"
+        },
+        {
+          "japanese": "そつぎょうする",
+          "kanji": "卒業する",
+          "english": "to graduate (from...) (schoolを)"
+        },
+        {
+          "japanese": "はっぴょうする",
+          "kanji": "発表する",
+          "english": "to make a presentation; to make public"
+        }
+      ],
+      "adverbs_and_expressions": [
+        { "japanese": "～けど", "kanji": "", "english": "..., but;..., so" },
+        { "japanese": "～め", "kanji": "～目", "english": "... -th" },
+        { "japanese": "いちにちめ", "kanji": "一日目", "english": "first day" },
+        {
+          "japanese": "いちにちじゅう",
+          "kanji": "一日中",
+          "english": "all day long"
+        },
+        { "japanese": "さいきん", "kanji": "最近", "english": "recently" },
+        {
+          "japanese": "もういちど",
+          "kanji": "もう一度",
+          "english": "one more time"
+        },
+        {
+          "japanese": "たのしみです",
+          "kanji": "楽しみです",
+          "english": "cannot wait; to look forward to it"
+        }
+      ]
+    },
+    {
+      "lesson": 16,
+      "nouns": [
+        {
+          "japanese": "えきいん（さん）",
+          "kanji": "駅員（さん）",
+          "english": "station attendant"
+        },
+        { "japanese": "おや", "kanji": "親", "english": "parent" },
+        { "japanese": "しんせき", "kanji": "親せき", "english": "relatives" },
+        { "japanese": "ごみ", "kanji": "", "english": "garbage" },
+        { "japanese": "さとう", "kanji": "砂糖", "english": "sugar" },
+        {
+          "japanese": "ファイル",
+          "kanji": "",
+          "english": "(file) folder; portfolio; file"
+        },
+        { "japanese": "おおきさ", "kanji": "大きさ", "english": "size" },
+        {
+          "japanese": "みち",
+          "kanji": "道",
+          "english": "way; road; directions"
+        },
+        {
+          "japanese": "きまつしけん",
+          "kanji": "期末試験",
+          "english": "final examination"
+        },
+        { "japanese": "けんきゅう", "kanji": "研究", "english": "research" },
+        {
+          "japanese": "だいがくいん",
+          "kanji": "大学院",
+          "english": "graduate school"
+        },
+        {
+          "japanese": "しょうがくきん",
+          "kanji": "奨学金",
+          "english": "scholarship"
+        },
+        {
+          "japanese": "すいせんじょう",
+          "kanji": "推薦状",
+          "english": "letter of recommendation"
+        },
+        { "japanese": "たいふう", "kanji": "台風", "english": "typhoon" },
+        { "japanese": "ぶんか", "kanji": "文化", "english": "culture" },
+        { "japanese": "へんじ", "kanji": "返事", "english": "reply" },
+        { "japanese": "ひ", "kanji": "日", "english": "day" }
+      ],
+      "i_adjectives": [
+        { "japanese": "きたない", "kanji": "汚い", "english": "dirty" }
+      ],
+      "u_verbs": [
+        {
+          "japanese": "おこす",
+          "kanji": "起こす",
+          "english": "to wake (someone) up(～を)"
+        },
+        {
+          "japanese": "おごる",
+          "kanji": "",
+          "english": "to treat (someone) to a meal (personにmealを)"
+        },
+        { "japanese": "わらう", "kanji": "笑う", "english": "to laugh" },
+        {
+          "japanese": "おちこむ",
+          "kanji": "落ち込む",
+          "english": "to get depressed"
+        },
+        {
+          "japanese": "こまる",
+          "kanji": "困る",
+          "english": "to have difficulty"
+        },
+        {
+          "japanese": "だす",
+          "kanji": "出す",
+          "english": "to take (something) out; to hand in (something)(～を)"
+        },
+        {
+          "japanese": "なおす",
+          "kanji": "直す",
+          "english": "to correct; to fix(～を)"
+        },
+        {
+          "japanese": "みつかる",
+          "kanji": "見つかる",
+          "english": "to be found(～が)"
+        },
+        {
+          "japanese": "やくす",
+          "kanji": "訳す",
+          "english": "to translate (sourceをtargetに)"
+        },
+        {
+          "japanese": "かす",
+          "kanji": "貸す",
+          "english": "to lend (personにthingを)"
+        },
+        {
+          "japanese": "つれていく",
+          "kanji": "連れていく",
+          "english": "to take (someone) to (a place) (personをplaceに)"
+        },
+        {
+          "japanese": "みちにまよう",
+          "kanji": "道に迷う",
+          "english": "to become lost; to lose one's way"
+        },
+        {
+          "japanese": "むかえにいく",
+          "kanji": "迎えに行く",
+          "english": "to go to pick up (placeまで/にpersonを)"
+        }
+      ],
+      "ru_verbs": [
+        {
+          "japanese": "あつめる",
+          "kanji": "集める",
+          "english": "to collect(～を)"
+        },
+        {
+          "japanese": "いれる",
+          "kanji": "入れる",
+          "english": "to put (something) in (thingをplaceに)"
+        },
+        {
+          "japanese": "みせる",
+          "kanji": "見せる",
+          "english": "to show (personにthingを)"
+        },
+        {
+          "japanese": "のりおくれる",
+          "kanji": "乗り遅れる",
+          "english": "to miss (a train, bus, etc.)(～に)"
+        },
+        {
+          "japanese": "アイロンをかける",
+          "kanji": "",
+          "english": "to iron (clothes)(～に)"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "あさねぼうする",
+          "kanji": "朝寝坊する",
+          "english": "to oversleep"
+        },
+        {
+          "japanese": "あんないする",
+          "kanji": "案内する",
+          "english": "to show (someone) around (placeを)"
+        },
+        {
+          "japanese": "せつめいする",
+          "kanji": "説明する",
+          "english": "to explain"
+        },
+        {
+          "japanese": "むかえにくる",
+          "kanji": "迎えに来る",
+          "english": "to come to pick up (placeまで/にpersonを)"
+        }
+      ],
+      "adverbs_and_expressions": [
+        {
+          "japanese": "きょうじゅうに",
+          "kanji": "今日中に",
+          "english": "by the end of today"
+        },
+        {
+          "japanese": "じゅぎょうちゅうに",
+          "kanji": "授業中に",
+          "english": "in class; during the class"
+        },
+        {
+          "japanese": "このあいだ",
+          "kanji": "この間",
+          "english": "the other day"
+        },
+        { "japanese": "これから", "kanji": "", "english": "from now on" },
+        {
+          "japanese": "このぐらい",
+          "kanji": "",
+          "english": "about this much(=これぐらい/このくらい/これくらい)"
+        },
+        {
+          "japanese": "じぶんで",
+          "kanji": "自分で",
+          "english": "(do something) by oneself"
+        },
+        { "japanese": "ほかの", "kanji": "他の", "english": "other" },
+        {
+          "japanese": "ええと",
+          "kanji": "",
+          "english": "well...; let me see..."
+        },
+        {
+          "japanese": "じつは",
+          "kanji": "実は",
+          "english": "actually; in fact"
+        },
+        {
+          "japanese": "～いがい",
+          "kanji": "～以外",
+          "english": "other than..."
+        },
+        { "japanese": "ごめん", "kanji": "", "english": "I'm sorry. (casual)" },
+        {
+          "japanese": "しつれいします",
+          "kanji": "失礼します",
+          "english": "Excuse me.; Sorry to interrupt you."
+        }
+      ]
+    },
+    {
+      "lesson": 17,
+      "nouns": [
+        { "japanese": "あかちゃん", "kanji": "赤ちゃん", "english": "baby" },
+        {
+          "japanese": "おきゃくさん",
+          "kanji": "お客さん",
+          "english": "guest; visitor; client; customer"
+        },
+        {
+          "japanese": "しゅしょう",
+          "kanji": "首相",
+          "english": "prime minister"
+        },
+        {
+          "japanese": "サラリーマン",
+          "kanji": "",
+          "english": "salaryman; office worker"
+        },
+        { "japanese": "きゅうりょう", "kanji": "給料", "english": "salary" },
+        {
+          "japanese": "ざんぎょう",
+          "kanji": "残業",
+          "english": "overtime work"
+        },
+        { "japanese": "パンダ", "kanji": "", "english": "panda" },
+        {
+          "japanese": "コンタクト（レンズ）",
+          "kanji": "",
+          "english": "contact lenses"
+        },
+        { "japanese": "ひげ", "kanji": "", "english": "beard" },
+        { "japanese": "ブーツ", "kanji": "", "english": "boots" },
+        { "japanese": "かぎ", "kanji": "鍵", "english": "lock; key" },
+        { "japanese": "たからくじ", "kanji": "宝くじ", "english": "lottery" },
+        { "japanese": "かみ", "kanji": "紙", "english": "paper" },
+        { "japanese": "スプーン", "kanji": "", "english": "spoon" },
+        { "japanese": "おゆ", "kanji": "お湯", "english": "hot water" },
+        {
+          "japanese": "でんしレンジ",
+          "kanji": "電子レンジ",
+          "english": "microwave oven"
+        },
+        { "japanese": "ヒーター", "kanji": "", "english": "heater" },
+        { "japanese": "ニュース", "kanji": "", "english": "news" },
+        { "japanese": "かじ", "kanji": "火事", "english": "fire" },
+        {
+          "japanese": "りょこうがいしゃ",
+          "kanji": "旅行会社",
+          "english": "travel agency"
+        },
+        {
+          "japanese": "ショッピングモール",
+          "kanji": "",
+          "english": "shopping mall"
+        },
+        { "japanese": "りょう", "kanji": "寮", "english": "dormitory" },
+        { "japanese": "ちがい", "kanji": "違い", "english": "difference" },
+        { "japanese": "ひみつ", "kanji": "秘密", "english": "secret" },
+        { "japanese": "じゅんび", "kanji": "準備", "english": "preparation" },
+        { "japanese": "じぶん", "kanji": "自分", "english": "oneself" }
+      ],
+      "i_adjectives": [
+        { "japanese": "あぶない", "kanji": "危ない", "english": "dangerous" },
+        { "japanese": "うらやましい", "kanji": "", "english": "envious" },
+        {
+          "japanese": "すくない",
+          "kanji": "少ない",
+          "english": "a little; a few"
+        },
+        {
+          "japanese": "つごうがわるい",
+          "kanji": "都合が悪い",
+          "english": "inconvenient; to have a scheduling conflict"
+        },
+        { "japanese": "つよい", "kanji": "強い", "english": "strong" }
+      ],
+      "na_adjectives": [
+        {
+          "japanese": "さいあく（な）",
+          "kanji": "最悪",
+          "english": "the worst"
+        }
+      ],
+      "u_verbs": [
+        {
+          "japanese": "えらぶ",
+          "kanji": "選ぶ",
+          "english": "to choose; to select(～を)"
+        },
+        {
+          "japanese": "おゆをわかす",
+          "kanji": "お湯を沸かす",
+          "english": "to boil water"
+        },
+        {
+          "japanese": "かみをとかす",
+          "kanji": "髪をとかす",
+          "english": "to comb one's hair"
+        },
+        {
+          "japanese": "ひげをそる",
+          "kanji": "",
+          "english": "to shave one's beard"
+        },
+        {
+          "japanese": "ぬぐ",
+          "kanji": "脱ぐ",
+          "english": "to take off (clothes)(～を)"
+        },
+        {
+          "japanese": "こむ",
+          "kanji": "混む",
+          "english": "to get crowded(～が)"
+        },
+        {
+          "japanese": "たからくじにあたる",
+          "kanji": "宝くじに当たる",
+          "english": "to win a lottery"
+        }
+      ],
+      "ru_verbs": [
+        {
+          "japanese": "いれる",
+          "kanji": "",
+          "english": "to make tea, coffee, etc.(～を)"
+        },
+        {
+          "japanese": "うまれる",
+          "kanji": "生まれる",
+          "english": "to be born(～が)"
+        },
+        { "japanese": "かぎをかける", "kanji": "", "english": "to lock(～に)" },
+        {
+          "japanese": "たりる",
+          "kanji": "足りる",
+          "english": "to be sufficient; to be enough(～が)"
+        },
+        {
+          "japanese": "なれる",
+          "kanji": "慣れる",
+          "english": "to get used to...(～に)"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "おいのりする",
+          "kanji": "お祈りする",
+          "english": "to pray(～に)"
+        },
+        {
+          "japanese": "けしょうする",
+          "kanji": "化粧する",
+          "english": "to put makeup on"
+        },
+        {
+          "japanese": "しゅうしょくする",
+          "kanji": "就職する",
+          "english": "to get a full-time job (at...) (companyに)"
+        },
+        {
+          "japanese": "りこんする",
+          "kanji": "離婚する",
+          "english": "to get a divorce (personと)"
+        },
+        {
+          "japanese": "する",
+          "kanji": "",
+          "english": "to wear small items (necktie, watch, etc.)(～を)"
+        }
+      ],
+      "adverbs_and_expressions": [
+        { "japanese": "ずいぶん", "kanji": "", "english": "very" },
+        { "japanese": "たとえば", "kanji": "例えば", "english": "for example" },
+        {
+          "japanese": "～にくらべて",
+          "kanji": "～に比べて",
+          "english": "compared with..."
+        },
+        { "japanese": "～によると", "kanji": "", "english": "according to..." },
+        { "japanese": "まえ", "kanji": "前", "english": "before..." },
+        { "japanese": "やっぱり", "kanji": "", "english": "after all" },
+        {
+          "japanese": "～かな（あ）",
+          "kanji": "",
+          "english": "I wonder... (casual)"
+        },
+        { "japanese": "そうか", "kanji": "", "english": "I see. (casual)" },
+        {
+          "japanese": "おめでとうございます",
+          "kanji": "",
+          "english": "Congratulations!"
+        }
+      ]
+    },
+    {
+      "lesson": 18,
+      "nouns": [
+        { "japanese": "カーテン", "kanji": "", "english": "curtain" },
+        { "japanese": "ソファ", "kanji": "", "english": "sofa" },
+        {
+          "japanese": "れいぞうこ",
+          "kanji": "冷蔵庫",
+          "english": "refrigerator"
+        },
+        { "japanese": "スイッチ", "kanji": "", "english": "switch" },
+        { "japanese": "しょうゆ", "kanji": "しょう油", "english": "soy sauce" },
+        { "japanese": "スープ", "kanji": "", "english": "soup" },
+        { "japanese": "バナナ", "kanji": "", "english": "banana" },
+        { "japanese": "ポップコーン", "kanji": "", "english": "popcorn" },
+        { "japanese": "シャンプー", "kanji": "", "english": "shampoo" },
+        { "japanese": "ろうそく", "kanji": "", "english": "candle" },
+        { "japanese": "タオル", "kanji": "", "english": "towel" },
+        { "japanese": "スカート", "kanji": "", "english": "skirt" },
+        { "japanese": "にっき", "kanji": "日記", "english": "diary" },
+        {
+          "japanese": "けいたい（でんわ）",
+          "kanji": "携帯（電話）",
+          "english": "cell phone"
+        },
+        { "japanese": "さくら", "kanji": "桜", "english": "cherry blossom" },
+        { "japanese": "むし", "kanji": "虫", "english": "insect" },
+        { "japanese": "やちん", "kanji": "家賃", "english": "rent" },
+        { "japanese": "そと", "kanji": "外", "english": "outside" },
+        { "japanese": "あと", "kanji": "後", "english": "the rest" },
+        { "japanese": "ゆうがた", "kanji": "夕方", "english": "evening" }
+      ],
+      "i_adjectives": [
+        { "japanese": "あかるい", "kanji": "明るい", "english": "bright" },
+        { "japanese": "くらい", "kanji": "暗い", "english": "dark" },
+        {
+          "japanese": "はずかしい",
+          "kanji": "恥ずかしい",
+          "english": "embarrassing; to feel embarrassed"
+        }
+      ],
+      "na_adjectives": [
+        {
+          "japanese": "たいせつ（な）",
+          "kanji": "大切",
+          "english": "precious; important"
+        },
+        {
+          "japanese": "ふあん（な）",
+          "kanji": "不安",
+          "english": "anxious; worried"
+        },
+        { "japanese": "むり（な）", "kanji": "無理", "english": "impossible" }
+      ],
+      "u_verbs": [
+        {
+          "japanese": "あく",
+          "kanji": "開く",
+          "english": "(something) opens(～が)"
+        },
+        {
+          "japanese": "しまる",
+          "kanji": "閉まる",
+          "english": "(something) closes(～が)"
+        },
+        {
+          "japanese": "あやまる",
+          "kanji": "謝る",
+          "english": "to apologize (personに)"
+        },
+        {
+          "japanese": "おす",
+          "kanji": "押す",
+          "english": "to press; to push(～を)"
+        },
+        {
+          "japanese": "おとす",
+          "kanji": "落とす",
+          "english": "to drop (something)(～を)"
+        },
+        {
+          "japanese": "おゆがわく",
+          "kanji": "お湯が沸く",
+          "english": "water boils"
+        },
+        { "japanese": "ころぶ", "kanji": "転ぶ", "english": "to fall down" },
+        {
+          "japanese": "こわす",
+          "kanji": "壊す",
+          "english": "to break (something)(～を)"
+        },
+        { "japanese": "さく", "kanji": "咲く", "english": "to bloom(～が)" },
+        {
+          "japanese": "たすかる",
+          "kanji": "助かる",
+          "english": "to be saved; to be helped"
+        },
+        {
+          "japanese": "たのむ",
+          "kanji": "頼む",
+          "english": "to ask (a favor) (personに～を)"
+        },
+        {
+          "japanese": "つく",
+          "kanji": "",
+          "english": "(something) turns on(～が)"
+        },
+        {
+          "japanese": "よごす",
+          "kanji": "汚す",
+          "english": "to make dirty(～を)"
+        }
+      ],
+      "ru_verbs": [
+        {
+          "japanese": "おちる",
+          "kanji": "落ちる",
+          "english": "(something) drops(～が)"
+        },
+        {
+          "japanese": "かたづける",
+          "kanji": "片付ける",
+          "english": "to tidy up(～を)"
+        },
+        {
+          "japanese": "かんがえる",
+          "kanji": "考える",
+          "english": "to think (about); to consider"
+        },
+        {
+          "japanese": "きえる",
+          "kanji": "消える",
+          "english": "(something) goes off(～が)"
+        },
+        {
+          "japanese": "こわれる",
+          "kanji": "壊れる",
+          "english": "(something) breaks(～が)"
+        },
+        {
+          "japanese": "よごれる",
+          "kanji": "汚れる",
+          "english": "to become dirty(～が)"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "ちゅうもんする",
+          "kanji": "注文する",
+          "english": "to place an order(～を)"
+        }
+      ],
+      "adverbs_and_expressions": [
+        { "japanese": "いますぐ", "kanji": "今すぐ", "english": "right away" },
+        { "japanese": "～までに", "kanji": "", "english": "by (time/date)" },
+        { "japanese": "ほんとうに", "kanji": "本当に", "english": "really" },
+        { "japanese": "まず", "kanji": "", "english": "first of all" },
+        {
+          "japanese": "おかげで",
+          "kanji": "",
+          "english": "thanks to...(～の)"
+        },
+        {
+          "japanese": "どうしよう",
+          "kanji": "",
+          "english": "What should I/we do?"
+        },
+        {
+          "japanese": "～（ん）だろう",
+          "kanji": "",
+          "english": "short form of～（ん）でしょう"
+        },
+        {
+          "japanese": "おさきにしつれいします",
+          "kanji": "お先に失礼します",
+          "english": "See you. (lit., I'm leaving ahead of you.)"
+        },
+        {
+          "japanese": "おつかれさま（でした）",
+          "kanji": "お疲れ様（でした）",
+          "english": "You must be tired after working so hard. (greeting between friends and coworkers)"
+        }
+      ]
+    },
+    {
+      "lesson": 19,
+      "nouns": [
+        {
+          "japanese": "おくさま",
+          "kanji": "奥様",
+          "english": "(your/someone's) wife (polite)"
+        },
+        {
+          "japanese": "おこさん",
+          "kanji": "お子さん",
+          "english": "(your/someone's) child (polite)"
+        },
+        {
+          "japanese": "ちゅうがくせい",
+          "kanji": "中学生",
+          "english": "junior high school student"
+        },
+        {
+          "japanese": "ぶちょう",
+          "kanji": "部長",
+          "english": "department manager"
+        },
+        {
+          "japanese": "しゅっちょう",
+          "kanji": "出張",
+          "english": "business trip"
+        },
+        {
+          "japanese": "けいご",
+          "kanji": "敬語",
+          "english": "honorific language"
+        },
+        { "japanese": "こちら", "kanji": "", "english": "this way (polite)" },
+        { "japanese": "どちら", "kanji": "", "english": "where (polite)" },
+        {
+          "japanese": "おれい",
+          "kanji": "お礼",
+          "english": "expression of gratitude"
+        },
+        {
+          "japanese": "しゅるい",
+          "kanji": "種類",
+          "english": "a kind; a sort"
+        },
+        { "japanese": "はなし", "kanji": "話", "english": "talk; story" },
+        { "japanese": "なやみ", "kanji": "悩み", "english": "worry" },
+        { "japanese": "まちがい", "kanji": "間違い", "english": "mistake" },
+        { "japanese": "せいかく", "kanji": "性格", "english": "personality" },
+        {
+          "japanese": "なまけもの",
+          "kanji": "怠け者",
+          "english": "lazy person"
+        },
+        {
+          "japanese": "はずかしがりや",
+          "kanji": "恥ずかしがり屋",
+          "english": "shy person"
+        }
+      ],
+      "i_adjectives": [
+        {
+          "japanese": "なかがいい",
+          "kanji": "仲がいい",
+          "english": "be on good/close terms; to get along well"
+        }
+      ],
+      "na_adjectives": [
+        {
+          "japanese": "まじめ（な）",
+          "kanji": "",
+          "english": "serious; sober; diligent"
+        }
+      ],
+      "u_verbs": [
+        {
+          "japanese": "いらっしゃる",
+          "kanji": "",
+          "english": "honorific expression for いく, くる, and いる"
+        },
+        {
+          "japanese": "めしあがる",
+          "kanji": "召し上がる",
+          "english": "honorific expression for たべる and のむ"
+        },
+        {
+          "japanese": "くださる",
+          "kanji": "下さる",
+          "english": "honorific expression for くれる"
+        },
+        {
+          "japanese": "なさる",
+          "kanji": "",
+          "english": "honorific expression for する"
+        },
+        {
+          "japanese": "おやすみになる",
+          "kanji": "お休みになる",
+          "english": "honorific expression for ねる"
+        },
+        {
+          "japanese": "ごらんになる",
+          "kanji": "ご覧になる",
+          "english": "honorific expression for みる"
+        },
+        {
+          "japanese": "おっしゃる",
+          "kanji": "",
+          "english": "honorific expression for いう"
+        },
+        {
+          "japanese": "～ていらっしゃる",
+          "kanji": "",
+          "english": "honorific expression for～ている"
+        },
+        {
+          "japanese": "おくる",
+          "kanji": "送る",
+          "english": "to walk/drive (someone) (personをplaceまで)"
+        },
+        { "japanese": "おこる", "kanji": "怒る", "english": "to get angry" },
+        {
+          "japanese": "きまる",
+          "kanji": "決まる",
+          "english": "to be decided(～が)"
+        },
+        {
+          "japanese": "しりあう",
+          "kanji": "知り合う",
+          "english": "to get acquainted with(～と)"
+        },
+        {
+          "japanese": "よぶ",
+          "kanji": "呼ぶ",
+          "english": "to call (one's name)(～を); to invite (personをeventに)"
+        },
+        {
+          "japanese": "ひっこす",
+          "kanji": "引っ越す",
+          "english": "to move (to another place to live)(～に)"
+        },
+        {
+          "japanese": "よる",
+          "kanji": "寄る",
+          "english": "to stop by (placeに)"
+        }
+      ],
+      "ru_verbs": [
+        {
+          "japanese": "おくれる",
+          "kanji": "遅れる",
+          "english": "to become late(～に)"
+        },
+        {
+          "japanese": "かける",
+          "kanji": "",
+          "english": "to sit down (seatに)"
+        },
+        {
+          "japanese": "もてる",
+          "kanji": "",
+          "english": "to be popular (in terms of romantic interest) (peopleに)"
+        },
+        {
+          "japanese": "はれる",
+          "kanji": "晴れる",
+          "english": "to become sunny"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "ごちそうする",
+          "kanji": "",
+          "english": "to treat/invite (someone) to a meal (personにmealを)"
+        },
+        {
+          "japanese": "えんりょする",
+          "kanji": "遠慮する",
+          "english": "to hold back for the time being; to refrain from"
+        },
+        {
+          "japanese": "しょうたいする",
+          "kanji": "招待する",
+          "english": "to invite someone (to an event/a place) (personをevent/placeに)"
+        },
+        {
+          "japanese": "はなしをする",
+          "kanji": "話をする",
+          "english": "to have a talk"
+        }
+      ],
+      "adverbs_and_expressions": [
+        {
+          "japanese": "おととい",
+          "kanji": "",
+          "english": "the day before yesterday"
+        },
+        { "japanese": "まいあさ", "kanji": "毎朝", "english": "every morning" },
+        { "japanese": "それで", "kanji": "", "english": "then; therefore" },
+        { "japanese": "なぜ", "kanji": "", "english": "why(=どうして)" },
+        {
+          "japanese": "ほんとうは",
+          "kanji": "本当は",
+          "english": "in fact; originally"
+        },
+        { "japanese": "まだ", "kanji": "", "english": "still" },
+        {
+          "japanese": "しょうしょう",
+          "kanji": "少々",
+          "english": "a few seconds"
+        },
+        {
+          "japanese": "～めいさま",
+          "kanji": "～名様",
+          "english": "party of... people"
+        },
+        { "japanese": "ようこそ", "kanji": "", "english": "Welcome." },
+        {
+          "japanese": "よろしくおつたえください",
+          "kanji": "よろしくお伝えください",
+          "english": "Please give my best regards (to...)(～に)"
+        }
+      ]
+    },
+    {
+      "lesson": 20,
+      "nouns": [
+        { "japanese": "アニメ", "kanji": "", "english": "animation" },
+        { "japanese": "しょうせつ", "kanji": "小説", "english": "novel" },
+        { "japanese": "しゅみ", "kanji": "趣味", "english": "hobby; pastime" },
+        { "japanese": "つき", "kanji": "月", "english": "moon" },
+        {
+          "japanese": "うちゅうじん",
+          "kanji": "宇宙人",
+          "english": "space alien"
+        },
+        { "japanese": "せんす", "kanji": "扇子", "english": "(hand) fan" },
+        { "japanese": "スニーカー", "kanji": "", "english": "sneakers" },
+        { "japanese": "ヘッドホン", "kanji": "", "english": "headphones" },
+        { "japanese": "おにぎり", "kanji": "", "english": "rice ball" },
+        { "japanese": "どうぶつ", "kanji": "動物", "english": "animal" },
+        { "japanese": "あちら", "kanji": "", "english": "that way (polite)" },
+        {
+          "japanese": "かかりのもの",
+          "kanji": "係の者",
+          "english": "our person in charge"
+        },
+        {
+          "japanese": "おたく",
+          "kanji": "お宅",
+          "english": "(someone's) home/house"
+        },
+        { "japanese": "～や", "kanji": "～屋", "english": "... shop" },
+        { "japanese": "してん", "kanji": "支店", "english": "branch office" },
+        { "japanese": "ドイツ", "kanji": "", "english": "Germany" },
+        { "japanese": "しんごう", "kanji": "信号", "english": "traffic light" },
+        { "japanese": "かど", "kanji": "角", "english": "corner" },
+        { "japanese": "じ", "kanji": "字", "english": "letter; character" },
+        { "japanese": "おと", "kanji": "音", "english": "sound" }
+      ],
+      "i_adjectives": [
+        {
+          "japanese": "おもい",
+          "kanji": "重い",
+          "english": "heavy; serious (illness)"
+        },
+        { "japanese": "かるい", "kanji": "軽い", "english": "light" }
+      ],
+      "na_adjectives": [
+        {
+          "japanese": "ふしぎ（な）",
+          "kanji": "不思議",
+          "english": "mysterious"
+        }
+      ],
+      "u_verbs": [
+        {
+          "japanese": "おる",
+          "kanji": "",
+          "english": "extra-modest expression for いる"
+        },
+        {
+          "japanese": "まいる",
+          "kanji": "参る",
+          "english": "extra-modest expression for いく and くる"
+        },
+        {
+          "japanese": "もうす",
+          "kanji": "申す",
+          "english": "extra-modest expression for いう"
+        },
+        {
+          "japanese": "いたす",
+          "kanji": "致す",
+          "english": "extra-modest expression for する"
+        },
+        {
+          "japanese": "いただく",
+          "kanji": "頂く",
+          "english": "extra-modest expression for たべる and のむ"
+        },
+        {
+          "japanese": "ござる",
+          "kanji": "",
+          "english": "extra-modest expression for ある"
+        },
+        {
+          "japanese": "～ておる",
+          "kanji": "",
+          "english": "extra-modest expression for～ている"
+        },
+        {
+          "japanese": "～でござる",
+          "kanji": "",
+          "english": "extra-modest expression for です"
+        },
+        {
+          "japanese": "いただく",
+          "kanji": "頂く",
+          "english": "humble expression for もらう"
+        },
+        {
+          "japanese": "うかがう",
+          "kanji": "伺う",
+          "english": "(1) to humbly visit (placeに) (2) to humbly ask (personに)"
+        },
+        {
+          "japanese": "まがる",
+          "kanji": "曲がる",
+          "english": "to turn (right/left) (cornerをdirectionに)"
+        },
+        {
+          "japanese": "もどる",
+          "kanji": "戻る",
+          "english": "to return; to come back(～に)"
+        }
+      ],
+      "ru_verbs": [
+        {
+          "japanese": "さしあげる",
+          "kanji": "差し上げる",
+          "english": "humble expression for あげる"
+        },
+        {
+          "japanese": "きこえる",
+          "kanji": "聞こえる",
+          "english": "to be audible(～が)"
+        },
+        {
+          "japanese": "つたえる",
+          "kanji": "伝える",
+          "english": "to convey message (personに)"
+        },
+        {
+          "japanese": "またせる",
+          "kanji": "待たせる",
+          "english": "to keep (someone) waiting(～を)"
+        },
+        {
+          "japanese": "つづける",
+          "kanji": "続ける",
+          "english": "to continue(～を)"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "こうかんする",
+          "kanji": "交換する",
+          "english": "to exchange (XとYを)"
+        },
+        {
+          "japanese": "へんぴんする",
+          "kanji": "返品する",
+          "english": "to return (merchandise)(～を)"
+        },
+        {
+          "japanese": "せいかつする",
+          "kanji": "生活する",
+          "english": "to lead a life"
+        }
+      ],
+      "adverbs_and_expressions": [
+        { "japanese": "～かい", "kanji": "～階", "english": "... th floor" },
+        { "japanese": "いっかい", "kanji": "一階", "english": "first floor" },
+        { "japanese": "～みたいなX", "kanji": "", "english": "X like..." },
+        { "japanese": "また", "kanji": "", "english": "again" },
+        { "japanese": "では", "kanji": "", "english": "well then (polite)" },
+        { "japanese": "できれば", "kanji": "", "english": "if possible" },
+        {
+          "japanese": "まことに",
+          "kanji": "誠に",
+          "english": "really (very polite)"
+        },
+        {
+          "japanese": "よろしかったら",
+          "kanji": "",
+          "english": "if it is okay (polite)"
+        },
+        {
+          "japanese": "かしこまりました",
+          "kanji": "",
+          "english": "Certainly."
+        },
+        {
+          "japanese": "しつれいしました",
+          "kanji": "失礼しました",
+          "english": "I'm very sorry."
+        },
+        {
+          "japanese": "もうしわけありません",
+          "kanji": "申し訳ありません",
+          "english": "You have my apologies. (polite)"
+        }
+      ]
+    },
+    {
+      "lesson": 21,
+      "nouns": [
+        { "japanese": "ちかん", "kanji": "", "english": "groper; pervert" },
+        {
+          "japanese": "どろぼう",
+          "kanji": "泥棒",
+          "english": "thief; burglar"
+        },
+        { "japanese": "はんにん", "kanji": "犯人", "english": "criminal" },
+        { "japanese": "どうりょう", "kanji": "同僚", "english": "colleague" },
+        {
+          "japanese": "かいぎ",
+          "kanji": "会議",
+          "english": "business meeting; conference"
+        },
+        { "japanese": "スピーチ", "kanji": "", "english": "speech" },
+        { "japanese": "か", "kanji": "蚊", "english": "mosquito" },
+        { "japanese": "ガソリン", "kanji": "", "english": "gasoline" },
+        { "japanese": "ポスター", "kanji": "", "english": "poster" },
+        { "japanese": "もんく", "kanji": "文句", "english": "complaint" },
+        {
+          "japanese": "るす",
+          "kanji": "留守",
+          "english": "absence; not at home"
+        },
+        {
+          "japanese": "けいさつ",
+          "kanji": "警察",
+          "english": "police; police station"
+        },
+        { "japanese": "せいふ", "kanji": "政府", "english": "government" },
+        {
+          "japanese": "じゅぎょうりょう",
+          "kanji": "授業料",
+          "english": "tuition"
+        },
+        { "japanese": "こうじょう", "kanji": "工場", "english": "factory" },
+        { "japanese": "かんきょう", "kanji": "環境", "english": "environment" },
+        {
+          "japanese": "しゅうでん",
+          "kanji": "終電",
+          "english": "last train (of the day)"
+        },
+        { "japanese": "こと", "kanji": "事", "english": "things; matters" },
+        { "japanese": "むかし", "kanji": "昔", "english": "old days; past" }
+      ],
+      "i_adjectives": [
+        { "japanese": "とおい", "kanji": "遠い", "english": "far (away)" },
+        { "japanese": "ひどい", "kanji": "", "english": "awful" }
+      ],
+      "na_adjectives": [
+        { "japanese": "あんぜん（な）", "kanji": "安全", "english": "safe" },
+        {
+          "japanese": "めちゃくちゃ（な）",
+          "kanji": "",
+          "english": "messy; disorganized"
+        },
+        {
+          "japanese": "へん（な）",
+          "kanji": "変",
+          "english": "strange; unusual"
+        }
+      ],
+      "u_verbs": [
+        {
+          "japanese": "おく",
+          "kanji": "置く",
+          "english": "to put; to lay; to place (placeにobjectを)"
+        },
+        {
+          "japanese": "つつむ",
+          "kanji": "包む",
+          "english": "to wrap; to cover(～を)"
+        },
+        {
+          "japanese": "はる",
+          "kanji": "貼る",
+          "english": "to post; to stick (placeにobjectを)"
+        },
+        {
+          "japanese": "やく",
+          "kanji": "焼く",
+          "english": "to bake; to burn; to grill(～を)"
+        },
+        {
+          "japanese": "やる",
+          "kanji": "",
+          "english": "to give (to pets, plants, younger siblings, etc.)(～を)"
+        },
+        { "japanese": "ける", "kanji": "", "english": "to kick(～を)" },
+        {
+          "japanese": "なぐる",
+          "kanji": "殴る",
+          "english": "to strike; to hit; to punch(～を)"
+        },
+        { "japanese": "ふむ", "kanji": "踏む", "english": "to step on(～を)" },
+        { "japanese": "さす", "kanji": "刺す", "english": "to bite(～を)" },
+        {
+          "japanese": "ぬすむ",
+          "kanji": "盗む",
+          "english": "to steal; to rob(～を)"
+        },
+        {
+          "japanese": "さわる",
+          "kanji": "触る",
+          "english": "to touch(～に／を)"
+        },
+        {
+          "japanese": "つかまる",
+          "kanji": "捕まる",
+          "english": "to be arrested; to be caught(～が)"
+        },
+        {
+          "japanese": "きがつく",
+          "kanji": "気が付く",
+          "english": "to notice(～に)"
+        },
+        {
+          "japanese": "ふる",
+          "kanji": "",
+          "english": "to turn down (somebody); to reject; to jilt(～を)"
+        },
+        {
+          "japanese": "もんくをいう",
+          "kanji": "文句を言う",
+          "english": "to complain"
+        }
+      ],
+      "ru_verbs": [
+        { "japanese": "いじめる", "kanji": "", "english": "to bully(～を)" },
+        {
+          "japanese": "ほめる",
+          "kanji": "",
+          "english": "to praise; to say nice things(～を)"
+        },
+        {
+          "japanese": "きがえる",
+          "kanji": "着替える",
+          "english": "to change clothes"
+        },
+        {
+          "japanese": "しんじる",
+          "kanji": "信じる",
+          "english": "to believe(～を)"
+        },
+        { "japanese": "ためる", "kanji": "", "english": "to save money(～を)" },
+        {
+          "japanese": "まちがえる",
+          "kanji": "間違える",
+          "english": "to make a mistake(～を)"
+        },
+        {
+          "japanese": "みつける",
+          "kanji": "見つける",
+          "english": "to find(～を)"
+        },
+        {
+          "japanese": "くらべる",
+          "kanji": "比べる",
+          "english": "to compare (XとYを)"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "ばかにする",
+          "kanji": "",
+          "english": "to insult; to make a fool of...(～を)"
+        },
+        {
+          "japanese": "びっくりする",
+          "kanji": "",
+          "english": "to be surprised(～に)"
+        },
+        {
+          "japanese": "ひるねをする",
+          "kanji": "昼寝をする",
+          "english": "to take a nap"
+        },
+        {
+          "japanese": "れんらくする",
+          "kanji": "連絡する",
+          "english": "to contact (personに)"
+        }
+      ],
+      "adverbs_and_expressions": [
+        {
+          "japanese": "ごぜんちゅう",
+          "kanji": "午前中",
+          "english": "in the morning"
+        },
+        { "japanese": "～ころ", "kanji": "", "english": "time of...; when..." },
+        { "japanese": "すこし", "kanji": "少し", "english": "a little" },
+        { "japanese": "とにかく", "kanji": "", "english": "anyhow; anyway" }
+      ]
+    },
+    {
+      "lesson": 22,
+      "nouns": [
+        { "japanese": "かぜ", "kanji": "風", "english": "wind" },
+        { "japanese": "き", "kanji": "木", "english": "tree" },
+        { "japanese": "ボール", "kanji": "", "english": "ball" },
+        { "japanese": "さる", "kanji": "猿", "english": "monkey" },
+        { "japanese": "めんきょ", "kanji": "免許", "english": "license" },
+        {
+          "japanese": "よしゅう",
+          "kanji": "予習",
+          "english": "preparation of a lesson"
+        },
+        {
+          "japanese": "ふくしゅう",
+          "kanji": "復習",
+          "english": "review of a lesson"
+        },
+        { "japanese": "じゅく", "kanji": "塾", "english": "cram school" },
+        {
+          "japanese": "えいかいわ",
+          "kanji": "英会話",
+          "english": "English conversation"
+        },
+        {
+          "japanese": "あいて",
+          "kanji": "相手",
+          "english": "partner; the other person"
+        },
+        {
+          "japanese": "おじょうさん",
+          "kanji": "お嬢さん",
+          "english": "(someone's) daughter (polite)"
+        },
+        { "japanese": "かみさま", "kanji": "神様", "english": "God" },
+        {
+          "japanese": "せんぱい",
+          "kanji": "先輩",
+          "english": "senior member of a group"
+        },
+        {
+          "japanese": "こうはい",
+          "kanji": "後輩",
+          "english": "junior member of a group"
+        },
+        { "japanese": "ぶか", "kanji": "部下", "english": "subordinate" },
+        {
+          "japanese": "うけつけ",
+          "kanji": "受付",
+          "english": "reception desk"
+        },
+        { "japanese": "しょるい", "kanji": "書類", "english": "document" },
+        { "japanese": "プロジェクト", "kanji": "", "english": "project" },
+        { "japanese": "かじ", "kanji": "家事", "english": "housework" },
+        { "japanese": "ヨーロッパ", "kanji": "", "english": "Europe" },
+        {
+          "japanese": "ひとりぐらし",
+          "kanji": "一人暮らし",
+          "english": "living alone"
+        },
+        { "japanese": "じゆう", "kanji": "自由", "english": "freedom" },
+        {
+          "japanese": "むだづかい",
+          "kanji": "無駄遣い",
+          "english": "waste (money)"
+        }
+      ],
+      "i_adjectives": [
+        { "japanese": "うるさい", "kanji": "", "english": "noisy; annoying" }
+      ],
+      "na_adjectives": [
+        {
+          "japanese": "しんぱい（な）",
+          "kanji": "心配",
+          "english": "worried about(～が)"
+        },
+        { "japanese": "びんぼう（な）", "kanji": "貧乏", "english": "poor" },
+        {
+          "japanese": "ぺらぺら（な）",
+          "kanji": "",
+          "english": "fluent (languageが)"
+        },
+        {
+          "japanese": "らく（な）",
+          "kanji": "楽",
+          "english": "easy; comfortable"
+        }
+      ],
+      "u_verbs": [
+        {
+          "japanese": "かぜがふく",
+          "kanji": "風が吹く",
+          "english": "the wind blows"
+        },
+        {
+          "japanese": "コピーをとる",
+          "kanji": "コピーを取る",
+          "english": "to make a photocopy"
+        },
+        { "japanese": "はこぶ", "kanji": "運ぶ", "english": "to carry(～を)" },
+        {
+          "japanese": "ひろう",
+          "kanji": "拾う",
+          "english": "to pick up (something)(～を)"
+        },
+        {
+          "japanese": "ほうっておく",
+          "kanji": "放っておく",
+          "english": "to leave (someone/something) alone; to neglect(～を)"
+        },
+        {
+          "japanese": "まにあう",
+          "kanji": "間に合う",
+          "english": "to be in time(～に)"
+        },
+        { "japanese": "かつ", "kanji": "勝つ", "english": "to win(～に)" }
+      ],
+      "ru_verbs": [
+        {
+          "japanese": "うける",
+          "kanji": "受ける",
+          "english": "to take (an examination)(～を)"
+        },
+        {
+          "japanese": "けいかくをたてる",
+          "kanji": "計画を立てる",
+          "english": "to make a plan"
+        },
+        {
+          "japanese": "そだてる",
+          "kanji": "育てる",
+          "english": "to raise; to bring up(～を)"
+        },
+        {
+          "japanese": "たすける",
+          "kanji": "助ける",
+          "english": "to help; to rescue(～を)"
+        },
+        {
+          "japanese": "まける",
+          "kanji": "負ける",
+          "english": "to lose (a match)(～に)"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "おねがいする",
+          "kanji": "お願いする",
+          "english": "to request help (personに～を)"
+        },
+        {
+          "japanese": "さんせいする",
+          "kanji": "賛成する",
+          "english": "to agree(～に)"
+        },
+        {
+          "japanese": "はんたいする",
+          "kanji": "反対する",
+          "english": "to oppose; to object to(～に)"
+        },
+        {
+          "japanese": "しっぱいする",
+          "kanji": "失敗する",
+          "english": "to fail; to be unsuccessful"
+        },
+        {
+          "japanese": "てつやする",
+          "kanji": "徹夜する",
+          "english": "to stay up all night"
+        },
+        {
+          "japanese": "ほんやくする",
+          "kanji": "翻訳する",
+          "english": "to translate (sourceとtargetに)"
+        }
+      ],
+      "adverbs_and_expressions": [
+        { "japanese": "こんなふう", "kanji": "", "english": "like this" },
+        { "japanese": "じゆうに", "kanji": "自由に", "english": "freely" },
+        {
+          "japanese": "ずっと",
+          "kanji": "",
+          "english": "for a long time; all the time"
+        },
+        {
+          "japanese": "ぜったいに",
+          "kanji": "絶対に",
+          "english": "definitely"
+        },
+        { "japanese": "なんども", "kanji": "何度も", "english": "many times" },
+        {
+          "japanese": "もうすこし",
+          "kanji": "もう少し",
+          "english": "a little more"
+        },
+        { "japanese": "～とか", "kanji": "", "english": "... for example" },
+        {
+          "japanese": "そんなこと（は）ない",
+          "kanji": "",
+          "english": "I don't think so."
+        },
+        {
+          "japanese": "～ちゃん",
+          "kanji": "",
+          "english": "[suffix for names of children]"
+        },
+        { "japanese": "おおくの～", "kanji": "多くの～", "english": "many..." }
+      ]
+    },
+    {
+      "lesson": 23,
+      "nouns": [
+        { "japanese": "くつした", "kanji": "靴下", "english": "socks" },
+        {
+          "japanese": "ふくろ",
+          "kanji": "袋",
+          "english": "sack; plastic/paper bag"
+        },
+        { "japanese": "ただ", "kanji": "", "english": "free of charge" },
+        { "japanese": "ゆうしょく", "kanji": "夕食", "english": "dinner" },
+        { "japanese": "ばしょ", "kanji": "場所", "english": "place" },
+        { "japanese": "かいだん", "kanji": "階段", "english": "stairs" },
+        {
+          "japanese": "しょうがっこう",
+          "kanji": "小学校",
+          "english": "elementary school"
+        },
+        { "japanese": "めんせつ", "kanji": "面接", "english": "interview" },
+        { "japanese": "けんこう", "kanji": "健康", "english": "health" },
+        { "japanese": "りそう", "kanji": "理想", "english": "ideal" },
+        {
+          "japanese": "るすばん",
+          "kanji": "留守番",
+          "english": "looking after a house during someone's absence"
+        },
+        { "japanese": "メッセージ", "kanji": "", "english": "message; text" },
+        {
+          "japanese": "きゅうこう",
+          "kanji": "休講",
+          "english": "class cancellation"
+        },
+        {
+          "japanese": "かいがいりょこう",
+          "kanji": "海外旅行",
+          "english": "trip to a foreign country"
+        },
+        {
+          "japanese": "ぼんおどり",
+          "kanji": "盆踊り",
+          "english": "Bon dance (Japanese traditional dance)"
+        },
+        { "japanese": "おもいで", "kanji": "思い出", "english": "memory" },
+        { "japanese": "しゃかい", "kanji": "社会", "english": "society" },
+        { "japanese": "けっか", "kanji": "結果", "english": "result" },
+        { "japanese": "ちょうさ", "kanji": "調査", "english": "survey" }
+      ],
+      "i_adjectives": [
+        { "japanese": "まずい", "kanji": "", "english": "(food is) terrible" }
+      ],
+      "na_adjectives": [
+        {
+          "japanese": "かわいそう（な）",
+          "kanji": "",
+          "english": "pitiful; feel sorry for; poor thing"
+        }
+      ],
+      "u_verbs": [
+        {
+          "japanese": "あめがやむ",
+          "kanji": "雨がやむ",
+          "english": "the rain stops"
+        },
+        {
+          "japanese": "ちがう",
+          "kanji": "違う",
+          "english": "to be different; to be wrong(～と)"
+        },
+        {
+          "japanese": "なくなる",
+          "kanji": "",
+          "english": "to be lost; to disappear(～が)"
+        },
+        {
+          "japanese": "いなくなる",
+          "kanji": "",
+          "english": "(someone) is gone; to disappear(～が)"
+        },
+        {
+          "japanese": "おせわになる",
+          "kanji": "お世話になる",
+          "english": "to be in someone's care(～に)"
+        },
+        {
+          "japanese": "おなかをこわす",
+          "kanji": "",
+          "english": "to have a stomachache"
+        },
+        {
+          "japanese": "きにいる",
+          "kanji": "気に入る",
+          "english": "to find something agreeable(～が／を)"
+        },
+        {
+          "japanese": "わるぐちをいう",
+          "kanji": "悪口を言う",
+          "english": "to talk behind someone's back"
+        }
+      ],
+      "ru_verbs": [
+        {
+          "japanese": "こたえる",
+          "kanji": "答える",
+          "english": "to answer(～に)"
+        },
+        {
+          "japanese": "はなれる",
+          "kanji": "離れる",
+          "english": "(something/someone) separates; parts from(～と)"
+        }
+      ],
+      "irregular_verbs": [
+        {
+          "japanese": "がっかりする",
+          "kanji": "",
+          "english": "to be disappointed(～に)"
+        },
+        {
+          "japanese": "がまんする",
+          "kanji": "我慢する",
+          "english": "to be tolerant/patient(～を)"
+        },
+        {
+          "japanese": "どうじょうする",
+          "kanji": "同情する",
+          "english": "to sympathize(～に)"
+        },
+        {
+          "japanese": "～かおをする",
+          "kanji": "～顔をする",
+          "english": "to look... (facial expression)"
+        },
+        {
+          "japanese": "カンニングする",
+          "kanji": "",
+          "english": "to cheat in an exam"
+        },
+        {
+          "japanese": "チェックする",
+          "kanji": "",
+          "english": "to check(～を)"
+        },
+        {
+          "japanese": "せわをする",
+          "kanji": "世話をする",
+          "english": "to take care of...(～の)"
+        },
+        {
+          "japanese": "ゆうしょうする",
+          "kanji": "優勝する",
+          "english": "to win a championship"
+        },
+        {
+          "japanese": "もどってくる",
+          "kanji": "戻ってくる",
+          "english": "(something/someone) comes back"
+        }
+      ],
+      "adverbs_and_expressions": [
+        {
+          "japanese": "そんな～",
+          "kanji": "",
+          "english": "such...; that kind of..."
+        },
+        {
+          "japanese": "～ために",
+          "kanji": "",
+          "english": "for...; for the sake of..."
+        },
+        { "japanese": "ものすごく", "kanji": "", "english": "extremely" },
+        {
+          "japanese": "そろそろ",
+          "kanji": "",
+          "english": "it is about time to..."
+        },
+        { "japanese": "さいごに", "kanji": "最後に", "english": "finally" },
+        {
+          "japanese": "げんきでね",
+          "kanji": "元気でね",
+          "english": "Take care of yourself."
+        },
+        { "japanese": "そうそう", "kanji": "", "english": "You are right." }
+      ]
+    }
+  ]
+}

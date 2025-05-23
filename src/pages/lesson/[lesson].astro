@@ -1,0 +1,469 @@
+---
+// src/pages/lessons/[lesson].astro
+import Layout from "../../layouts/Layout.astro";
+import lessonsData from "../../../data/lessons.json";
+
+// Generate a static path for each lesson
+export async function getStaticPaths() {
+    // Extract all lesson numbers from the JSON data
+    const lessonIds = lessonsData.lessons.map((lesson) =>
+        lesson.lesson.toString(),
+    );
+
+    return lessonIds.map((id) => ({
+        params: { lesson: id },
+    }));
+}
+
+// Get the lesson data from the params
+const { lesson } = Astro.params;
+const lessonNumber = Number.parseInt(lesson);
+
+// Find the corresponding lesson data from the JSON
+const lessonData = lessonsData.lessons.find((l) => l.lesson === lessonNumber);
+
+// Function to sort vocabulary words alphabetically by English
+const sortByEnglish = (a: { english: string }, b: { english: string }) => {
+    return a.english.localeCompare(b.english);
+};
+
+// Prepare data with sorted vocabulary items
+// Define an enum for vocabulary types
+enum VocabularyType {
+    Nouns = "nouns",
+    IAdjectives = "i_adjectives",
+    NaAdjectives = "na_adjectives",
+    UVerbs = "u_verbs",
+    RuVerbs = "ru_verbs",
+    IrregularVerbs = "irregular_verbs",
+    AdverbsExpressions = "adverbs_and_expressions",
+    Counters = "counters",
+}
+
+// Define the vocabulary item type
+type VocabularyItem = {
+    english: string;
+    japanese: string;
+    kanji?: string;
+};
+
+// Function to safely get and sort vocabulary items
+const getVocabulary = (type: VocabularyType): VocabularyItem[] => {
+    return lessonData?.[type] ? [...lessonData[type]].sort(sortByEnglish) : [];
+};
+
+// Get all vocabulary categories using the enum and type system
+const nouns = getVocabulary(VocabularyType.Nouns);
+const iAdjectives = getVocabulary(VocabularyType.IAdjectives);
+const naAdjectives = getVocabulary(VocabularyType.NaAdjectives);
+const uVerbs = getVocabulary(VocabularyType.UVerbs);
+const ruVerbs = getVocabulary(VocabularyType.RuVerbs);
+const irregularVerbs = getVocabulary(VocabularyType.IrregularVerbs);
+const adverbsExpressions = getVocabulary(VocabularyType.AdverbsExpressions);
+const counters = getVocabulary(VocabularyType.Counters);
+---
+
+<Layout title={`Japanese Vocabulary - Lesson ${lessonNumber}`}>
+    <main>
+        <h1>Lesson {lessonNumber} Vocabulary</h1>
+
+        <nav class="category-nav">
+            <ul>
+                {
+                    nouns.length > 0 && (
+                        <li>
+                            <a href="#nouns">Nouns</a>
+                        </li>
+                    )
+                }
+                {
+                    iAdjectives.length > 0 && (
+                        <li>
+                            <a href="#i-adjectives">い-Adjectives</a>
+                        </li>
+                    )
+                }
+                {
+                    naAdjectives.length > 0 && (
+                        <li>
+                            <a href="#na-adjectives">な-Adjectives</a>
+                        </li>
+                    )
+                }
+                {
+                    uVerbs.length > 0 && (
+                        <li>
+                            <a href="#u-verbs">U-Verbs</a>
+                        </li>
+                    )
+                }
+                {
+                    ruVerbs.length > 0 && (
+                        <li>
+                            <a href="#ru-verbs">Ru-Verbs</a>
+                        </li>
+                    )
+                }
+                {
+                    irregularVerbs.length > 0 && (
+                        <li>
+                            <a href="#irregular-verbs">Irregular Verbs</a>
+                        </li>
+                    )
+                }
+                {
+                    adverbsExpressions.length > 0 && (
+                        <li>
+                            <a href="#adverbs-expressions">
+                                Adverbs & Expressions
+                            </a>
+                        </li>
+                    )
+                }
+                {
+                    counters.length > 0 && (
+                        <li>
+                            <a href="#counters">Counters</a>
+                        </li>
+                    )
+                }
+            </ul>
+        </nav>
+
+        {
+            nouns.length > 0 && (
+                <section id="nouns" class="vocab-section">
+                    <h2>Nouns</h2>
+                    <div class="vocab-grid">
+                        {nouns.map((word) => (
+                            <div class="vocab-card">
+                                <div class="japanese">
+                                    <span class="hiragana">
+                                        {word.japanese}
+                                    </span>
+                                    {word.kanji && (
+                                        <span class="kanji">{word.kanji}</span>
+                                    )}
+                                </div>
+                                <div class="english">{word.english}</div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )
+        }
+
+        {
+            iAdjectives.length > 0 && (
+                <section id="i-adjectives" class="vocab-section">
+                    <h2>い-Adjectives</h2>
+                    <div class="vocab-grid">
+                        {iAdjectives.map((word) => (
+                            <div class="vocab-card">
+                                <div class="japanese">
+                                    <span class="hiragana">
+                                        {word.japanese}
+                                    </span>
+                                    {word.kanji && (
+                                        <span class="kanji">{word.kanji}</span>
+                                    )}
+                                </div>
+                                <div class="english">{word.english}</div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )
+        }
+
+        {
+            naAdjectives.length > 0 && (
+                <section id="na-adjectives" class="vocab-section">
+                    <h2>な-Adjectives</h2>
+                    <div class="vocab-grid">
+                        {naAdjectives.map((word) => (
+                            <div class="vocab-card">
+                                <div class="japanese">
+                                    <span class="hiragana">
+                                        {word.japanese}
+                                    </span>
+                                    {word.kanji && (
+                                        <span class="kanji">{word.kanji}</span>
+                                    )}
+                                </div>
+                                <div class="english">{word.english}</div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )
+        }
+
+        {
+            uVerbs.length > 0 && (
+                <section id="u-verbs" class="vocab-section">
+                    <h2>U-Verbs</h2>
+                    <div class="vocab-grid">
+                        {uVerbs.map((word) => (
+                            <div class="vocab-card">
+                                <div class="japanese">
+                                    <span class="hiragana">
+                                        {word.japanese}
+                                    </span>
+                                    {word.kanji && (
+                                        <span class="kanji">{word.kanji}</span>
+                                    )}
+                                </div>
+                                <div class="english">{word.english}</div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )
+        }
+
+        {
+            ruVerbs.length > 0 && (
+                <section id="ru-verbs" class="vocab-section">
+                    <h2>Ru-Verbs</h2>
+                    <div class="vocab-grid">
+                        {ruVerbs.map((word) => (
+                            <div class="vocab-card">
+                                <div class="japanese">
+                                    <span class="hiragana">
+                                        {word.japanese}
+                                    </span>
+                                    {word.kanji && (
+                                        <span class="kanji">{word.kanji}</span>
+                                    )}
+                                </div>
+                                <div class="english">{word.english}</div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )
+        }
+
+        {
+            irregularVerbs.length > 0 && (
+                <section id="irregular-verbs" class="vocab-section">
+                    <h2>Irregular Verbs</h2>
+                    <div class="vocab-grid">
+                        {irregularVerbs.map((word) => (
+                            <div class="vocab-card">
+                                <div class="japanese">
+                                    <span class="hiragana">
+                                        {word.japanese}
+                                    </span>
+                                    {word.kanji && (
+                                        <span class="kanji">{word.kanji}</span>
+                                    )}
+                                </div>
+                                <div class="english">{word.english}</div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )
+        }
+
+        {
+            adverbsExpressions.length > 0 && (
+                <section id="adverbs-expressions" class="vocab-section">
+                    <h2>Adverbs & Expressions</h2>
+                    <div class="vocab-grid">
+                        {adverbsExpressions.map((word) => (
+                            <div class="vocab-card">
+                                <div class="japanese">
+                                    <span class="hiragana">
+                                        {word.japanese}
+                                    </span>
+                                    {word.kanji && (
+                                        <span class="kanji">{word.kanji}</span>
+                                    )}
+                                </div>
+                                <div class="english">{word.english}</div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )
+        }
+
+        {
+            counters.length > 0 && (
+                <section id="counters" class="vocab-section">
+                    <h2>Counters</h2>
+                    <div class="vocab-grid">
+                        {counters.map((word) => (
+                            <div class="vocab-card">
+                                <div class="japanese">
+                                    <span class="hiragana">
+                                        {word.japanese}
+                                    </span>
+                                    {word.kanji && (
+                                        <span class="kanji">{word.kanji}</span>
+                                    )}
+                                </div>
+                                <div class="english">{word.english}</div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )
+        }
+
+        <div class="navigation-buttons">
+            {
+                lessonNumber > 13 && (
+                    <a href={`/lesson/${lessonNumber - 1}`} class="prev-button">
+                        ← Previous Lesson
+                    </a>
+                )
+            }
+            {
+                lessonNumber < 23 && (
+                    <a href={`/lesson/${lessonNumber + 1}`} class="next-button">
+                        Next Lesson →
+                    </a>
+                )
+            }
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #333;
+    }
+
+    .category-nav {
+        margin-bottom: 2rem;
+        background-color: #f5f5f5;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .category-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .category-nav a {
+        display: block;
+        padding: 0.5rem 1rem;
+        background-color: #e0e0e0;
+        color: #333;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .category-nav a:hover {
+        background-color: #333;
+        color: white;
+    }
+
+    .vocab-section {
+        margin-bottom: 3rem;
+    }
+
+    .vocab-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 0.5rem;
+    }
+
+    .vocab-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+    .vocab-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        transition:
+            transform 0.2s,
+            box-shadow 0.2s;
+    }
+
+    .vocab-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .japanese {
+        margin-bottom: 0.5rem;
+    }
+
+    .hiragana {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .kanji {
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+        color: #666;
+    }
+
+    .english {
+        color: #555;
+    }
+
+    .navigation-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+
+    .prev-button,
+    .next-button {
+        padding: 0.75rem 1.5rem;
+        background-color: #4a86e8;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .prev-button:hover,
+    .next-button:hover {
+        background-color: #3a76d8;
+    }
+
+    @media (max-width: 768px) {
+        .vocab-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .category-nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .category-nav a {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>
