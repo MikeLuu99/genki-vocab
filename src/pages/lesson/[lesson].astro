@@ -328,6 +328,7 @@ const counters = getVocabulary(VocabularyType.Counters);
                     </a>
                 )
             }
+            <a href={`/quiz/${lessonNumber}`} class="prev-button"> Practice </a>
             {
                 lessonNumber < 23 && (
                     <a href={`/lesson/${lessonNumber + 1}`} class="next-button">

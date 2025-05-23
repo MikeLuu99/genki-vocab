@@ -86,40 +86,35 @@ const allVocabulary = getAllVocabulary();
                 <h1 class="text-4xl font-bold text-black mb-2">
                     Lesson {lessonNumber} Quiz
                 </h1>
-                <p class="text-black">
-                    Test your knowledge of Japanese vocabulary
-                </p>
             </div>
 
+            <div class="mb-8 border-2 border-black p-8">
+                <h3 class="text-lg font-bold text-black mb-4">Quiz Mode:</h3>
+                <div class="flex flex-wrap gap-4">
+                    <label class="flex items-center cursor-pointer">
+                        <input
+                            type="radio"
+                            name="quiz-mode"
+                            value="ja-to-en"
+                            checked
+                            class="mr-2"
+                        />
+                        <span class="text-black">Japanese → English</span>
+                    </label>
+                    <label class="flex items-center cursor-pointer">
+                        <input
+                            type="radio"
+                            name="quiz-mode"
+                            value="en-to-ja"
+                            class="mr-2"
+                        />
+                        <span class="text-black">English → Japanese</span>
+                    </label>
+                </div>
+            </div>
             <!-- Quiz Container -->
             <div id="quiz-container" class="bg-white border-2 border-black p-8">
                 <!-- Quiz Mode Selection -->
-                <div class="mb-8">
-                    <h3 class="text-lg font-bold text-black mb-4">
-                        Quiz Mode:
-                    </h3>
-                    <div class="flex flex-wrap gap-4">
-                        <label class="flex items-center cursor-pointer">
-                            <input
-                                type="radio"
-                                name="quiz-mode"
-                                value="ja-to-en"
-                                checked
-                                class="mr-2"
-                            />
-                            <span class="text-black">Japanese → English</span>
-                        </label>
-                        <label class="flex items-center cursor-pointer">
-                            <input
-                                type="radio"
-                                name="quiz-mode"
-                                value="en-to-ja"
-                                class="mr-2"
-                            />
-                            <span class="text-black">English → Japanese</span>
-                        </label>
-                    </div>
-                </div>
 
                 <!-- Quiz Stats -->
                 <div
