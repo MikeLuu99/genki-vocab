@@ -1,1 +1,171 @@
 @import "tailwindcss";
+
+/* Base Layout */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Navigation */
+.category-nav {
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.category-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.category-nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    border: 1px solid black;
+}
+
+.category-nav a:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* Vocabulary Sections */
+.vocab-section {
+    margin-bottom: 3rem;
+}
+
+.vocab-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* Vocabulary Cards */
+.vocab-card {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.vocab-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.japanese {
+    margin-bottom: 0.5rem;
+}
+
+.hiragana {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.kanji {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    color: black;
+}
+
+.english {
+    color: black;
+}
+
+/* Lesson Grid */
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.lesson-card {
+    padding: 1.5rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid black;
+    transition:
+        transform 0.2s,
+        background-color 0.2s;
+}
+
+.lesson-card:hover {
+    transform: translateY(-3px);
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.prev-button,
+.next-button {
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    border: 1px solid black;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vocab-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
