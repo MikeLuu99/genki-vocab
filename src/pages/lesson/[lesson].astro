@@ -49,7 +49,14 @@ type VocabularyItem = {
 
 // Function to safely get and sort vocabulary items
 const getVocabulary = (type: VocabularyType): VocabularyItem[] => {
-    return lessonData?.[type] ? [...lessonData[type]].sort(sortByEnglish) : [];
+    // If the vocabulary type exists in the lesson data
+    if (lessonData?.[type]) {
+        // Create a copy of the array and sort it alphabetically by English words
+        return [...lessonData[type]].sort(sortByEnglish);
+    }
+
+    // Return an empty array if no vocabulary of this type exists
+    return [];
 };
 
 // Get all vocabulary categories using the enum and type system
