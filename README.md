@@ -1,8 +1,8 @@
-# Genki Japanese Vocabulary Resource
+# Genki Japanese Vocabulary Resource (げんきの単語)
 
 An Astro website for practicing Japanese vocabulary from the Genki textbook series.
 
-## 🧞 Running Locally
+## Running Locally
 
 All commands are run from the root of the project:
 
