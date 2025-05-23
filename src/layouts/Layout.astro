@@ -12,15 +12,17 @@ import "../styles/global.css";
         <title>Genki Vocabs and Quizzes</title>
     </head>
     <body>
+        <header>
+            <div class="header-content">
+                <a href="/">
+                    <img
+                        src="/favicon.svg"
+                        alt="Site Logo"
+                        class="header-logo"
+                    />
+                </a>
+            </div>
+        </header>
         <slot />
     </body>
 </html>
-
-<style>
-    html,
-    body {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-    }
-</style>
