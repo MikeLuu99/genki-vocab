@@ -322,7 +322,9 @@ const counters = getVocabulary(VocabularyType.Counters);
 
         <div class="navigation-buttons">
             {
-                lessonNumber > 13 && (
+                lessonNumber === 1 ? (
+                    <span class="prev-button disabled">← Previous Lesson</span>
+                ) : (
                     <a href={`/lesson/${lessonNumber - 1}`} class="prev-button">
                         ← Previous Lesson
                     </a>
@@ -330,7 +332,14 @@ const counters = getVocabulary(VocabularyType.Counters);
             }
             <a href={`/quiz/${lessonNumber}`} class="prev-button"> Practice </a>
             {
-                lessonNumber < 23 && (
+                lessonNumber === 23 ? (
+                    <span
+                        class="disabled cursor-not-allowed"
+                        style="padding: 0.75rem 1.5rem; background-color: white; color: black; text-decoration: none; border-radius: 4px; ; border: 1px solid black;"
+                    >
+                        Next Lesson →
+                    </span>
+                ) : (
                     <a href={`/lesson/${lessonNumber + 1}`} class="next-button">
                         Next Lesson →
                     </a>
